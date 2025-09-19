@@ -1,0 +1,134 @@
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: #0e0e0e; /* fundo bem escuro */
+  color: #e6e6e6; /* texto claro */
+  line-height: 1.6;
+}
+
+/* Capa */
+.capa {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.capa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(40%) brightness(60%) contrast(90%); /* efeito deserto */
+}
+
+.capa .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+.capa .overlay h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #d4a017; /* dourado/deserto */
+}
+
+.capa .overlay p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Navegação fixa */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  z-index: 1000;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d4a017; /* dourado destaque */
+}
+
+body {
+  padding-top: 60px; /* espaço para não cobrir o conteúdo */
+}
+
+/* Seções */
+section {
+  padding: 40px 12%;
+  border-bottom: 1px solid #333;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-left: 6px solid #d4a017;
+  padding-left: 10px;
+  color: #f4f4f4;
+}
+
+section p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Imagens gerais */
+section img {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  border: 3px solid #444;
+  box-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
+/* Imagem especial (mapa ou destaque) */
+.mapa, .tanques, .lideres {
+  max-width: 700px;
+  margin: 30px auto;
+  border: 3px solid #666;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+/* Foto centralizada pequena */
+.foto {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  max-width: 400px;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #444;
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+  filter: sepia(50%) contrast(95%); /* efeito envelhecido deserto */
+}
+
+/* Rolagem suave */
+html {
+  scroll-behavior: smooth; 
+}
